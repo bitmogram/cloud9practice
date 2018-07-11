@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Helper Classes*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  padding: 15px;
+}
+.pull-left {
+    float: left; 
+}
+.pull-right {
+    float:right;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.card h1, .card p {
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.centered {
+    margin: 0 auto;
+}
+/*/Helper Classes*/
+
+/*Header Styles*/
+
+
+nav {
+    background-color: black;
+    margin-top: 35px;
+    padding-top: 35px;
+}
+
+.brand {
+    width: 150px;
+}
+.bitwise {
+    height: 140px;
+}
+
+.nav-links {
+    list-style: none;
+    display: inline-block;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.nav-links li {
+    display: inline-block;
+    font-size: 34px;
+    padding: 39.5px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*/Header Styles*/
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: .1;
+}
+
+
+/*Video Styles*/
+.video-one  {
+    /*width: 560px;*/
+    /*height: 315px;*/
+    /*padding: 15px;*/
+    width: 65%;
+    height: 500px;
+    padding-top: 10px;
+}
+
+.video-one-text {
+    padding: 15px;
+    /*display: contain;*/
+    width: 100%;
+    border: black 3px solid;
+}
+
+.main-video-container {
+    position: centered;
+}
+
+.products-offered-container {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+.products-offered {
+    padding-top: 13px;
+    padding-right: 165px;
+    float: right;
+}
+
+
+/*This section is completely explorational. (Animation for the breakdancing man) Got carried away playing with translateX*/
+.dancing {
+    width: 56px;
+    position: absolute;
+    animation: 4s dancer infinite;
+}
+
+/*The word keframes in this animation is targeting the word "dancer" in my .dancing CSS */
+@keyframes dancer {
+     0% {
+    transform: translateX(15px)
+  }
+  5% {
+    transform: translateX(50px)
+  }
+  15% {
+    /*background-color: orange;*/
+  }
+  25% {
+    transform: translateX(500px);
+  }
+  70% {
+      transform: translateX(150px);
+    transform: rotate(90deg)
+  }
+}
